@@ -1,0 +1,298 @@
+@media screen{
+    #contenido{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 900px;   
+        background-color: #02010a; 
+    }
+    #cabecera{
+        background-color:#5b7989;
+        color: white;
+        text-shadow: 2px #02010a;
+        width: 100%;
+        height: 200px;
+    }
+    h3{
+        text-align: right;
+        float: right;
+        padding: 4px;
+    }
+    h1{
+        float: left;
+    }
+    #ImagenCentral{
+        background-color: #82c3a6;
+    }
+    #ImagenPrincipal{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 70%;
+        height: 40%;
+    }
+    #IzqImgSecundaria{
+        background-color: #d5c75f;
+        width: 50%;
+        height: 50%;
+        float: left;
+        display: block;
+    }
+    #DerImgSecundaria{
+        background-color: #d5c75f;
+        width: 50%;
+        height: 50%;
+        float: right;
+
+        display: block;
+        
+    }
+    #IzqImagenSecundaria{
+        transition: all 2s;
+        width: 80%;
+        height: 80%;
+        float: left;
+        margin: 30px;
+        display: block;
+    }
+    #IzqImagenSecundaria:hover{
+        transform: rotate(10deg);
+        text-shadow: #82c3a6;
+        border: 2px;
+    }
+    #DerImagenSecundaria{
+        transition: all 2s;
+        width: 80%;
+        height: 80%;
+        float: right;
+        margin: 30px;
+        display: block;
+    }
+    #DerImagenSecundaria:hover{
+        transform: translate(5px, 20px);
+        text-shadow: #82c3a6;
+        border: 2px;
+    }
+    #Imagenes{
+        background-color: #82c3a6;
+        display: block;
+    }
+    #SupDer{
+        filter: blur(10px);
+        width: 30%;
+        padding: 2px;
+        height: 50%;
+        flex-grow: 1;
+    }
+    #SupCen{
+        filter: grayscale(100%);
+        width: 30%;
+        height: 50%;
+        padding: 2px;
+        flex-grow: 1;
+    }
+    #SupIzq{
+        filter: sepia(90%);
+        width: 30%;
+        padding: 2px;
+        height: 50%;
+        flex-grow: 1;
+    }
+    #InfDer{
+        filter: grayscale(100%);
+        width: 30%;
+        height: 50%;
+        padding: 2px;
+        flex-grow: 1;
+    }
+    #InfCen{
+        width: 30%;
+        height: 50%;
+        flex-grow: 1;
+        padding: 2px;
+    }
+    #InfIzq{
+        filter: grayscale(100%);
+        width: 30%;
+        height: 50%;
+        flex-grow: 1;
+        padding: 2px;
+    }
+    #piepagina{
+        width: 100%;
+        height: 20%;
+        border-radius: 10px;
+        background-color: #C6d5c5;
+        display: flex;
+        
+    }
+    *{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #contacto{
+        width: 20%;
+        height: 10%;
+        flex-grow: 1;
+    }
+    #terminos{
+        width: 20%;
+        height: 10%;
+        flex-direction: 1;
+    }
+    #redes{
+        width: 20%;
+        height: 10%;
+        flex-grow: 1;
+    }
+    #derechos{
+        width: 20%;
+        height: 10%;
+        flex-grow: 1;
+    }
+}
+@media screen and (max-width: 450px){
+    #contenido{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 900px;   
+        background-color: #02010a; 
+    }
+    #cabecera h1{
+        text-align: center;
+        background-color:#5b7989;
+        color: white;
+        text-shadow: 2px #02010a;
+        width: 100%;
+        height: 20px;
+    }
+    #cabecera h3{
+        text-align: center;
+        width: 30%;
+    }
+    #ImagenCentral{
+        background-color: #82c3a6;
+    }
+    #ImagenPrincipal{
+        margin-left: auto;
+        margin-right: auto;
+    
+        display: block;
+        width: 70%;
+        height: 40%;
+    }
+    #IzqImgSecundaria{
+        background-color: #d5c75f;
+        width: 100%;
+        height: 50%;
+        float: left;
+        display: block;
+    }
+    #DerImgSecundaria{
+        background-color: #d5c75f;
+        width: 100%;
+        height: 100%;
+        float: right;
+        display: flex;
+    }
+    #IzqImagenSecundaria{
+        transition: all 2s;
+        width: 70%;
+        height: 70%;
+        float: left;
+        margin: 60px;
+        display: block;
+    }
+    #IzqImagenSecundaria:hover{
+        transform: rotate(10deg);
+        text-shadow: #82c3a6;
+        border: 2px;
+    }
+    #DerImagenSecundaria{
+        transition: all 2s;
+        width: 70%;
+        height: 70%;
+        float: right;
+        margin: 60px;
+        display: block;
+    }
+    #DerImagenSecundaria:hover{
+        transform: translate(5px, 20px);
+        text-shadow: #82c3a6;
+        border: 2px;
+    }
+    #piepagina{
+        width: 100%;
+        height: 20%;
+        border-radius: 10px;
+        background-color: #C6d5c5;
+        /*display: flex;*/
+        
+    }
+    *{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #SupDer{
+        width:80%;
+        margin: 30px;
+        padding: 2px;
+        height: 50%;
+        flex-grow: 1;
+    }
+    #SupCen{
+        width: 80%;
+        margin: 30px;
+        height: 50%;
+        padding: 2px;
+        flex-grow: 1;
+    }
+    #SupIzq{
+        width: 80%;
+        margin: 30px;
+        padding: 2px;
+        height: 50%;
+        flex-grow: 1;
+    }
+    #InfDer{
+        width: 80%;
+        margin: 30px;
+        height: 50%;
+        padding: 2px;
+        flex-grow: 1;
+    }
+    #InfCen{
+        width: 80%;
+        margin: 30px;
+        height: 50%;
+        flex-grow: 1;
+        padding: 2px;
+    }
+    #InfIzq{
+        width: 80%;
+        margin: 30px;
+        height: 50%;
+        flex-grow: 1;
+        padding: 2px;
+    }
+    #contacto{
+        width: 20%;
+        height: 10%;
+        font-size: 40%;
+        padding: 10px;
+    }
+    #terminos{
+        width: 20%;
+        height: 10%;
+        font-size: 50%;
+    }
+    #redes{
+        width: 20%;
+        height: 10%;
+        font-size: 50%;
+    }
+    #derechos{
+        width: 20%;
+        height: 10%;
+        font-size: 50%;
+    }
+}
