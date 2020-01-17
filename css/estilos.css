@@ -1,10 +1,35 @@
 @media screen{
+    @font-face {
+        font-family:"DancingScript-Regular";
+        src: url(/css/src/DancingScript-Regular.otf);
+    }
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    header{
+        animation-duration: 5s;
+        animation-name:animacion ;
+    }
+    @keyframes animacion{
+        0%{
+            margin-top: 150%;
+        }
+        60%{
+            margin-top: -5%;
+        }
+        100%{
+            margin-top: 0%;
+        }
+    }
     #contenido{
         margin-left: auto;
         margin-right: auto;
         display: block;
         width: 900px;   
         background-color: #02010a; 
+        padding: 50px;
     }
     #cabecera{
         background-color:#5b7989;
@@ -13,13 +38,20 @@
         width: 100%;
         height: 200px;
     }
-    h3{
-        text-align: right;
+    #cabecera h3,h4{
+        text-align: center;
         float: right;
-        padding: 4px;
+        padding: 10px;
+        font-family: "DancingScript-Regular";
+    }
+    h2{
+        text-align: center;
+        font-family: "Dancing Script"
     }
     h1{
         float: left;
+        padding: 10px;
+        font-family: "DancingScript-Regular";
     }
     #ImagenCentral{
         background-color: #82c3a6;
@@ -28,8 +60,9 @@
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 70%;
+        width: 60%;
         height: 40%;
+        padding: 20px;
     }
     #IzqImgSecundaria{
         background-color: #d5c75f;
@@ -43,7 +76,6 @@
         width: 50%;
         height: 50%;
         float: right;
-
         display: block;
         
     }
@@ -124,39 +156,80 @@
         border-radius: 10px;
         background-color: #C6d5c5;
         display: flex;
-        
-    }
-    *{
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin:auto     
     }
     #contacto{
-        width: 20%;
-        height: 10%;
-        flex-grow: 1;
+        max-width: 300px;
+        width: 25%;
+        display: flex;
+        /*height: 10%;
+        /*flex-grow: 1;*/
+        flex-direction: column ;
     }
     #terminos{
-        width: 20%;
-        height: 10%;
-        flex-direction: 1;
+        width: 25%;
+        display: flex;
+        /*height: 10%; 
+        /*flex-grow: 1;*/
+        flex-direction: column ;
     }
     #redes{
-        width: 20%;
-        height: 10%;
-        flex-grow: 1;
+        width: 25%;
+        display: flex;
+        flex-direction: column ;   
+        /*flex-grow: 1;*/
     }
+    /*div#redes div{
+        width: 80%;
+        height: 10%;
+        display: block;
+    }*/
     #derechos{
-        width: 20%;
-        height: 10%;
-        flex-grow: 1;
+        width: 25%;
+        display: flex;
+        flex-direction: column ; 
+        /*height: 10%;
+        /*flex-grow: 1;
+        flex-direction: column ;*/
     }
-}
+    .row img{
+        width: 35px;
+        height: 35px;
+    }
+    #piepagina h3{
+        text-align: center;
+        padding: 30px;
+    }
+    #piepagina label{
+        padding: 10px;
+    }
+
 @media screen and (max-width: 450px){
+    header{
+        animation-duration: 5s;
+        animation-name:animacion ;
+    }
+    @keyframes animacion{
+        0%{
+            margin-top: 150%;
+        }
+        60%{
+            margin-top: -5%;
+        }
+        100%{
+            margin-top: 0%;
+        }
+    }
     #contenido{
         margin-left: auto;
         margin-right: auto;
         display: block;
         width: 900px;   
         background-color: #02010a; 
+    }
+    #cabecera{
+        max-height: 100px;
+        padding: 10px;
     }
     #cabecera h1{
         text-align: center;
@@ -165,13 +238,16 @@
         text-shadow: 2px #02010a;
         width: 100%;
         height: 20px;
+        font-family: "DancingScript-Regular";
     }
     #cabecera h3{
         text-align: center;
-        width: 30%;
+        width: 33%;
+        padding: 30px;
     }
     #ImagenCentral{
         background-color: #82c3a6;
+        padding: 10px;
     }
     #ImagenPrincipal{
         margin-left: auto;
@@ -187,21 +263,26 @@
         height: 50%;
         float: left;
         display: block;
+        font-size: 50%;
+        max-height: 300px;
     }
     #DerImgSecundaria{
         background-color: #d5c75f;
         width: 100%;
-        height: 100%;
+        height: 50%;
         float: right;
-        display: flex;
+        display: block;
+        font-size: 50%;
+        max-height: 300px;
     }
     #IzqImagenSecundaria{
         transition: all 2s;
         width: 70%;
         height: 70%;
         float: left;
-        margin: 60px;
+        margin: 50px;
         display: block;
+        text-align: center;
     }
     #IzqImagenSecundaria:hover{
         transform: rotate(10deg);
@@ -213,22 +294,16 @@
         width: 70%;
         height: 70%;
         float: right;
-        margin: 60px;
+        margin: 40px;
         display: block;
+        text-align: center;
     }
     #DerImagenSecundaria:hover{
         transform: translate(5px, 20px);
         text-shadow: #82c3a6;
         border: 2px;
     }
-    #piepagina{
-        width: 100%;
-        height: 20%;
-        border-radius: 10px;
-        background-color: #C6d5c5;
-        /*display: flex;*/
-        
-    }
+
     *{
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
@@ -274,25 +349,38 @@
         flex-grow: 1;
         padding: 2px;
     }
+
+    #piepagina{
+        width: 100%;
+        height: 20%;
+        border-radius: 10px;
+        background-color: #C6d5c5;
+        display: block;
+        max-width: 450px;
+    }
     #contacto{
-        width: 20%;
-        height: 10%;
-        font-size: 40%;
+        width: 100%;
+        font-size: 80%;
         padding: 10px;
     }
     #terminos{
-        width: 20%;
-        height: 10%;
-        font-size: 50%;
+        width: 100%;
+        font-size: 80%;
+        padding: 10px;
     }
     #redes{
-        width: 20%;
-        height: 10%;
-        font-size: 50%;
+        width: 100%;
+        font-size: 80%;
+        padding: 10px;
+    }
+    .row img{
+        width: 10px;
+        height: 10px;
     }
     #derechos{
-        width: 20%;
-        height: 10%;
-        font-size: 50%;
+        width: 100%;
+        font-size: 80%;
+        padding: 10px;
     }
+}
 }
